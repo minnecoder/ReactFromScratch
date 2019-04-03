@@ -1,0 +1,31 @@
+{
+  "name": "reactfromscratch",
+  "version": "1.0.0",
+  "description": "A React boilerplate that's built from scratch",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minnecoder/ReactFromScratch.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Sean Parkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minnecoder/ReactFromScratch/issues"
+  },
+  "homepage": "https://github.com/minnecoder/ReactFromScratch#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
