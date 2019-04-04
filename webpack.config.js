@@ -8,6 +8,9 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
+                    options: {
+                        plugins: ['transform-inline-environment-variables'],
+                    },
                 },
             },
             {
@@ -15,6 +18,21 @@ module.exports = {
                 use: {
                     loader: 'html-loader',
                 },
+            },
+            {
+                test: /\.(s)?css$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+                options: {
+                    plugins: ['transform-inline-environment-variables'],
+                },
+            },
+            {
+                test: /\.svg$/,
+                use: 'svg-inline-loader',
+            },
+            {
+                test: /\.(jpe?g|png|gif|ico)$/i,
+                use: 'file-loader',
             },
         ],
     },
