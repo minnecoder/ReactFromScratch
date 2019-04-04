@@ -20,6 +20,9 @@ module.exports = {
                 },
             },
             {
+                options: {
+                    plugins: ['transform-inline-environment-variables'],
+                },
                 test: /\.(s)?css$/,
                 use: ['style-loader', 'css-loader', 'sass-loader'],
                 options: {
